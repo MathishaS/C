@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,i=0;
+    scanf("%d",&n);
+    int arr[n];
+    for( i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    int large=arr[0];
+    int seclarge= -1;
+    for(i=1;i<n;i++)
+    {
+       if(arr[i]>large)
+       {
+          seclarge=large;
+          large=arr[i];
+       }
+       else if(arr[i]>seclarge && arr[i]< large)
+       {
+          seclarge = arr[i];
+       }
+    }
+    if(seclarge != -1)
+    {
+        printf("the second largest = %d", seclarge);
+    }
+    else
+    {
+        printf("there is no second largest");
+    }
+    return 0;
+}
