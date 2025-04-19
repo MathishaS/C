@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+  int a,b,sum=0,diff=0;
+  float c,d,su=0.0,di=0.0;
+  scanf("%d",&a);
+  scanf("%d",&b);
+  scanf("%f",&c);
+  scanf("%f",&d);
+  if( a>0 && b>0)
+  {
+    sum=a+b;
+    diff=a-b; 
+  
+ }printf("%d %d\n", sum,diff);
+  if(c>0.0 && d>0.0)
+  {
+    su=c+d;
+    di=c-d;
+  }
+  printf("%.1f %.1f",su,di);
+    
+    return 0;
+} 
